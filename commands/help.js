@@ -3,6 +3,7 @@ module.exports = {
     description: "this is a help command",
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
+        .setColor('#00D8FF')
         .setTitle('Help')
         .setURL('https://discord.gg/xNUX3BYaHB')
         .setDescription('This is the help section with the main commands!')
