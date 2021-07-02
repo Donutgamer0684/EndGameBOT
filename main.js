@@ -25,10 +25,6 @@ client.on('message', message =>{
  
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
-
-    client.on('guildMemberAdd', guildMember =>{
-        guildMember.guild.channels.cache.get('843996498160517140').send(`Welcome <@${guildMember.user.id}>, Welcome to hell.`)
-    });
  
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);
