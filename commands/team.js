@@ -8,7 +8,7 @@ module.exports = {
         .setURL('https://discord.gg/xNUX3BYaHB')
         .setDescription('These are the main team members that make EndGame possible')
         .addFields(
-            { name: 'EndGame Admins', value: '`! Donut#6867`, `Carson0ping#6969`, `DumpyDog53#3114`' },
+            { name: 'EndGame Admins', value: '`! Donut#6867`, `Carson0ping#6969`, `doomdog53#3114`' },
             { name: 'EndGame BOT Dev', value: '`! Donut#6867`' },
             { name: '\u200B', value: '\u200B' },
         )
