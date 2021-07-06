@@ -92,8 +92,17 @@ client.on('message', message =>{
         message.reply('**You dont have the roles to do that!**');
       }
       
-    } else if (command == '8712834hewuyd87wdwadw9d729127'){
+    } else if (command == '8712834hewuyd87wdwadw9d729127'){ //devkey
         client.commands.get('dev').execute(message, args, Discord);
+
+    } else if (command == 'mod'){
+        client.commands.get('mod').execute(message, args, Discord);
+
+    } else if (command == 'mod config'){
+        client.commands.get('modconfig').execute(message, args, Discord);
+
+    } else if (command == 'mod help'){
+        client.commands.get('modhelp').execute(message, args, Discord);
     }
      else
     {

@@ -1,6 +1,6 @@
 module.exports = {
   name: 'geo',
-  description: "geo'",
+  description: "geo",
   execute(message, args, Discord) {
 
     if (!args.length || !args[0]) {
