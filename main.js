@@ -74,7 +74,7 @@ client.on('message', message =>{
     } else if (command == 'avatar'){
         client.commands.get('avatar').execute(message, args, Discord);
 
-    } else if (command == 'purge'){
+    } else if (command == 'purgeeeeeeee'){
         if (message.member.hasPermission('ADMINISTRATOR')) {
             client.commands.get('purge').execute(message, args, Discord);
         }
