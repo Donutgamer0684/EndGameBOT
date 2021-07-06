@@ -135,6 +135,10 @@ client.on('message', message =>{
                 embed.setFooter(`👍 ${memeUpvotes} | 💬 ${memeNumComments}`)
                 message.channel.send(embed);
             })
+
+    } else if (command == 'givemod'){
+        client.commands.get('givemod').execute(message, args, Discord);
+
     }
      else
     {
