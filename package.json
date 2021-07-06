@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "discord-buttons": "^2.4.1",
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "imageapi.js": "^1.7.0"
   }
 }
