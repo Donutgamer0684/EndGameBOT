@@ -118,8 +118,7 @@ client.on('message', message =>{
         client.commands.get('changelog').execute(message, args, Discord);
 
     } else if (command == 'meme'){
-        if (message.content === "?meme") {
-            const embed = new Discord.MessageEmbed()
+        const embed = new Discord.MessageEmbed()
             got('https://www.reddit.com/r/memes/random/.json').then(response => {
                 let content = JSON.parse(response.body);
                 let permalink = content[0].data.children[0].data.permalink;
@@ -136,7 +135,6 @@ client.on('message', message =>{
                 embed.setFooter(`👍 ${memeUpvotes} 👎 ${memeDownvotes} 💬 ${memeNumComments}`)
                 message.channel.send(embed);
             })
-        }
     }
      else
     {
