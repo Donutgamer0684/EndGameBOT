@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const api = require("imageapi.js");
+const got = require('got');
 
 const prefix = '.';
 
