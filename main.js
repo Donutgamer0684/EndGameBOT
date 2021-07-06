@@ -74,13 +74,13 @@ client.on('message', message =>{
     } else if (command == 'avatar'){
         client.commands.get('avatar').execute(message, args, Discord);
 
-    } else if (command == 'purgeeeeeeee'){
+    } else if (command == 'purge'){
         if (message.member.hasPermission('ADMINISTRATOR')) {
             client.commands.get('purge').execute(message, args, Discord);
         }
         else
         {
-            message.reply('**You dont have the roles to do that!**');
+            message.reply('**You dont have the perms to do that!**');
         }  
     } else if (command == '8712834hewuyd87wdwadw9d729127'){ //devkey
         client.commands.get('dev').execute(message, args, Discord);
