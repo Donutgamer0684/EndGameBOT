@@ -87,13 +87,31 @@ client.on('message', message =>{
         message.delete(message.author);
 
     } else if (command == 'mod'){
-        client.commands.get('mod').execute(message, args, Discord);
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            client.commands.get('mod').execute(message, args, Discord);
+        }
+        else
+        {
+            message.reply('**You dont have the perms to do that!**');
+        }
 
     } else if (command == 'modconfig'){
-        client.commands.get('modconfig').execute(message, args, Discord);
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            client.commands.get('modconfig').execute(message, args, Discord);
+        }
+        else
+        {
+            message.reply('**You dont have the perms to do that!**');
+        }
 
     } else if (command == 'modhelp'){
-        client.commands.get('modhelp').execute(message, args, Discord);
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            client.commands.get('modhelp').execute(message, args, Discord);
+        }
+        else
+        {
+            message.reply('**You dont have the perms to do that!**');
+        }
 
     } else if (command == 'changelog'){
         client.commands.get('changelog').execute(message, args, Discord);
