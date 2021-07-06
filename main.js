@@ -98,10 +98,10 @@ client.on('message', message =>{
     } else if (command == 'mod'){
         client.commands.get('mod').execute(message, args, Discord);
 
-    } else if (command == 'mod config'){
+    } else if (command == 'modconfig'){
         client.commands.get('modconfig').execute(message, args, Discord);
 
-    } else if (command == 'mod help'){
+    } else if (command == 'modhelp'){
         client.commands.get('modhelp').execute(message, args, Discord);
     }
      else
