@@ -20,7 +20,9 @@ module.exports = {
             { name: '`.dad`', value: 'A command y know', inline: true },
             { name: '`.hack`', value: 'Hack whoever you want', inline: true },
             { name: '`.avatar`', value: 'Displays the avatar of someone', inline: true },
-            { name: '`.purge`', value: 'Clears messages', inline: true },
+            { name: '`.purge`', value: 'Clears messages (mod command)', inline: true },
+            { name: '`.mod`', value: 'has mod only commands!', inline: true },
+            { name: '`.changelog`', value: 'shows a log of changes!', inline: true },
         )
         .setTimestamp()
         .setFooter('EndGame | The Most Sexy BOT You Will Ever Find');
