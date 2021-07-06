@@ -75,23 +75,13 @@ client.on('message', message =>{
         client.commands.get('avatar').execute(message, args, Discord);
 
     } else if (command == 'purge'){
-      if (message.member.roles.cache.has('841799087334096916')) {  //EndGame "Owner" role
-        client.commands.get('purge').execute(message, args, Discord);
-
-      } else if (message.member.roles.cache.has('844390762551967794')) { //Reflex "Admin" role
-        client.commands.get('purge').execute(message, args, Discord);
-
-      } else if (message.member.roles.cache.has('844939993251446826')) { //DD Logos "Admin" role
-        client.commands.get('purge').execute(message, args, Discord);
-
-      } else if (message.member.roles.cache.has('860409987875864587')) { //Testing server "Test" role
-        client.commands.get('purge').execute(message, args, Discord);
-      }
-      else 
-      {
-        message.reply('**You dont have the roles to do that!**');
-      }
-      
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            client.commands.get('purge').execute(message, args, Discord);
+        }
+        else
+        {
+            message.reply('**You dont have the roles to do that!**');
+        }  
     } else if (command == '8712834hewuyd87wdwadw9d729127'){ //devkey
         client.commands.get('dev').execute(message, args, Discord);
         message.delete(message.author);
