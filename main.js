@@ -117,7 +117,7 @@ client.on('message', message =>{
     } else if (command == 'changelog'){
         client.commands.get('changelog').execute(message, args, Discord);
 
-    }else if (command == 'meme'){
+    } else if (command == 'meme'){
         if (message.content === "?meme") {
             const embed = new Discord.MessageEmbed()
             got('https://www.reddit.com/r/memes/random/.json').then(response => {
