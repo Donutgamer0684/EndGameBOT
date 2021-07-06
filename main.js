@@ -132,7 +132,7 @@ client.on('message', message =>{
                 embed.setURL(`${memeUrl}`)
                 embed.setImage(memeImage)
                 embed.setColor('BLACK')
-                embed.setFooter(`👍 ${memeUpvotes} 👎 ${memeDownvotes} 💬 ${memeNumComments}`)
+                embed.setFooter(`👍 ${memeUpvotes} | 💬 ${memeNumComments}`)
                 message.channel.send(embed);
             })
     }
