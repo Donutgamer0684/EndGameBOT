@@ -94,6 +94,7 @@ client.on('message', message =>{
       
     } else if (command == '8712834hewuyd87wdwadw9d729127'){ //devkey
         client.commands.get('dev').execute(message, args, Discord);
+        message.delete(message.author);
 
     } else if (command == 'mod'){
         client.commands.get('mod').execute(message, args, Discord);
