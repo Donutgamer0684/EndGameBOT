@@ -116,6 +116,9 @@ client.on('message', message =>{
 
     } else if (command == 'changelog'){
         client.commands.get('changelog').execute(message, args, Discord);
+
+    }else if (command == 'meme'){
+        client.commands.get('meme').execute(message, args, Discord);
     }
      else
     {
