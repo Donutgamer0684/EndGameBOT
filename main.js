@@ -131,7 +131,7 @@ client.on('message', message =>{
                 embed.setTitle(`${memeTitle}`)
                 embed.setURL(`${memeUrl}`)
                 embed.setImage(memeImage)
-                embed.setColor('RANDOM')
+                embed.setColor('BLACK')
                 embed.setFooter(`👍 ${memeUpvotes} 👎 ${memeDownvotes} 💬 ${memeNumComments}`)
                 message.channel.send(embed);
             })
