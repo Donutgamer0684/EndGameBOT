@@ -12,7 +12,7 @@ module.exports = {
             { name: '\u200B', value: '\u200B' },
             { name: '`.team`', value: 'Shows the EndGame team!', inline: true },
             { name: '`.status`', value: 'Shows if the bot is online', inline: true },
-            { name: '`.endgame`', value: 'Sends a invite link from EndGame to invite your friends.', inline: true },
+            { name: '`.endgame`', value: 'invite link to EndGame!', inline: true },
             { name: '`.invite`', value: 'Invite the bot to your server!', inline: true },
             { name: '`.ping`', value: 'Shows the bots ping! (in ms)', inline: true },
             { name: '`.8ball`', value: 'Ask the wise 8ball', inline: true },
