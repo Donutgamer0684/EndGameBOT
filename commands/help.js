@@ -3,28 +3,16 @@ module.exports = {
     description: "this is a help command",
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
-        .setColor('#00D8FF')
-        .setTitle('Help')
-        .setURL('https://discord.gg/xNUX3BYaHB')
-        .setDescription('This is the help section with the main commands!')
+        .setColor('')
+        .setTitle('')
+        .setURL('')
+        .setDescription('')
         .addFields(
-            { name: 'Need more help?', value: 'Make a ticket and we will respond. Be patient!' },
+            { name: 'EndGame Bot Commands', value: 'We are adding commands every day!' },
             { name: '\u200B', value: '\u200B' },
-            { name: '`.team`', value: 'Shows the EndGame team!', inline: true },
-            { name: '`.status`', value: 'Shows if the bot is online', inline: true },
-            { name: '`.endgame`', value: 'invite link to EndGame!', inline: true },
-            { name: '`.invite`', value: 'Invite the bot to your server!', inline: true },
-            { name: '`.ping`', value: 'Shows the bots ping! (in ms)', inline: true },
-            { name: '`.8ball`', value: 'Ask the wise 8ball', inline: true },
-            { name: '`.rand`', value: 'random number gen', inline: true },
-            { name: '`.dad`', value: 'A command y know', inline: true },
-            { name: '`.hack`', value: 'Hack whoever you want', inline: true },
-            { name: '`.avatar`', value: 'Displays the avatar of someone', inline: true },
-            { name: '`.purge`', value: 'Clears messages (mod command)', inline: true },
-            { name: '`.mod`', value: 'has mod only commands!', inline: true },
-            { name: '`.changelog`', value: 'shows a log of changes!', inline: true },
-            { name: '`.meme`', value: 'shows a reddit meme!', inline: true },
-            { name: '`.stats`', value: 'shows bot stats', inline: true },
+            { name: '🤣 **Fun**', value: '`.help fun`', inline: true },
+            { name: '🕹 **Config**', value: '`.help config`', inline: true },
+            { name: '🔨 **Utility**', value: '`.help config`', inline: true },
         )
         .setTimestamp()
         .setFooter('EndGame | The Most Sexy BOT You Will Ever Find');
