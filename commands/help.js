@@ -24,6 +24,7 @@ module.exports = {
             { name: '`.mod`', value: 'has mod only commands!', inline: true },
             { name: '`.changelog`', value: 'shows a log of changes!', inline: true },
             { name: '`.meme`', value: 'shows a reddit meme!', inline: true },
+            { name: '`.stats`', value: 'shows bot stats', inline: true },
         )
         .setTimestamp()
         .setFooter('EndGame | The Most Sexy BOT You Will Ever Find');

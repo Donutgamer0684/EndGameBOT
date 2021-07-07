@@ -136,8 +136,8 @@ client.on('message', message =>{
                 message.channel.send(embed);
             })
 
-    } else if (command == 'givemod'){
-        client.commands.get('givemod').execute(message, args, Discord);
+    } else if (command == 'stats'){
+        client.commands.get('stats').execute(message, args, Discord);
 
     }
      else
