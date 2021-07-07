@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'help',
-    description: "this is a help command",
+    name: 'help config',
+    description: "this is a help config command",
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('')
@@ -10,9 +10,8 @@ module.exports = {
         .addFields(
             { name: 'EndGame Bot Commands', value: 'We are adding commands every day!' },
             { name: '\u200B', value: '\u200B' },
-            { name: '🤣 **Fun**', value: '`.help fun`', inline: true },
-            { name: '🕹 **Config**', value: '`.help config`', inline: true },
-            { name: '🔨 **Utility**', value: '`.help utility`', inline: true },
+            { name: '**.mod**', value: 'has mod only commands!', inline: true },
+            { name: '**.purge**', value: 'Clears messages (mod command)', inline: true },
         )
         .setTimestamp()
         .setFooter('EndGame | The Most Sexy BOT You Will Ever Find');
