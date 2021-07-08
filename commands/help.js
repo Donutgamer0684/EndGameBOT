@@ -10,9 +10,9 @@ module.exports = {
         .addFields(
             { name: 'EndGame Bot Commands', value: 'We are adding commands every day!' },
             { name: '\u200B', value: '\u200B' },
-            { name: '🤣 **Fun**', value: '`.help fun`', inline: true },
-            { name: '🕹 **Config**', value: '`.help config`', inline: true },
-            { name: '🔨 **Utility**', value: '`.help utility`', inline: true },
+            { name: '🤣 **Fun**', value: '`.help-fun`', inline: true },
+            { name: '🕹 **Config**', value: '`.help-config`', inline: true },
+            { name: '🔨 **Utility**', value: '`.help-utility`', inline: true },
         )
         .setTimestamp()
         .setFooter('EndGame | The Most Sexy BOT You Will Ever Find');
