@@ -8,7 +8,7 @@ module.exports = {
         .setURL('')
         .setDescription('')
         .addFields(
-            { name: 'EndGame Bot Commands', value: 'We are adding commands every day!' },
+            { name: 'EndGame Bot Commands', value: 'We are adding commands every day! If you need help you can dm ! Donut#6637' },
             { name: '\u200B', value: '\u200B' },
             { name: '**.mod**', value: 'has mod only commands!', inline: true },
             { name: '**.purge**', value: 'Clears messages (mod command)', inline: true },

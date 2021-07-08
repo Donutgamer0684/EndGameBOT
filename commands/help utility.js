@@ -8,7 +8,7 @@ module.exports = {
         .setURL('')
         .setDescription('')
         .addFields(
-            { name: 'EndGame Bot Commands', value: 'We are adding commands every day!' },
+            { name: 'EndGame Bot Commands', value: 'We are adding commands every day! If you need help you can dm ! Donut#6637' },
             { name: '\u200B', value: '\u200B' },
             { name: '**.team**', value: 'Shows the EndGame team!', inline: true },
             { name: '**.status**', value: 'Shows if the bot is online', inline: true },

@@ -8,7 +8,7 @@ module.exports = {
         .setURL('')
         .setDescription('')
         .addFields(
-            { name: 'EndGame Bot Commands', value: 'We are adding commands every day!' },
+            { name: 'EndGame Bot Commands', value: 'We are adding commands every day! If you need help you can dm ! Donut#6637' },
             { name: '\u200B', value: '\u200B' },
             { name: '**.8ball**', value: 'Ask the wise 8ball', inline: true },
             { name: '**.rand**', value: 'random number gen', inline: true },
