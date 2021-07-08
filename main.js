@@ -139,13 +139,13 @@ client.on('message', message =>{
     } else if (command == 'stats'){
         client.commands.get('stats').execute(message, args, Discord);
 
-    } else if (command == 'help fun'){
+    } else if (command == 'help-fun'){
         client.commands.get('help fun').execute(message, args, Discord);
 
-    } else if (command == 'help config'){
+    } else if (command == 'help-config'){
         client.commands.get('help config').execute(message, args, Discord);
 
-    } else if (command == 'help utility'){
+    } else if (command == 'help-utility'){
         client.commands.get('help utility').execute(message, args, Discord);
 
     }
