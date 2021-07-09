@@ -17,7 +17,7 @@ for(const file of commandFiles){
 
 const hook = new Discord.WebhookClient('862870396969418813', '7MOc0Tfjyx4oSNPKz32b3tfL1HEkNdNhctskYhwGd5xaXRiJbtvU6Uax4cmXsnJRuuFu');
 
-const ping = msg.createdTimestamp - message.createdTimestamp
+const ping = Date.now() - message.createdTimestamp
  
 
 client.once('ready', () => {
