@@ -22,7 +22,7 @@ client.once('ready', () => {
     console.log('ONLINE');
     console.log(`Logged in as: ${client.user.tag}`);
     client.user.setPresence({ activity: { name: ".Help for more info! | EndGame on top! |" }, status: "dnd" })
-    hook.send(`${client.user.tag} is online | Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+    hook.send(`${client.user.tag} is online`);
 }); 
  
 client.on('message', message =>{
