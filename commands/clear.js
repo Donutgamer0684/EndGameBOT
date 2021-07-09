@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args, Discord) {
         message.channel.messages.fetch().then((results) => {
             message.channel.bulkDelete(results)
-            message.channel.send('Channel wiped!')
+            message.channel.send('**Channel cleared!**')
           })
     }
   }
