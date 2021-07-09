@@ -148,6 +148,10 @@ client.on('message', message =>{
     } else if (command == 'help-utility'){
         client.commands.get('help utility').execute(message, args, Discord);
 
+    } else if (command == 'clear'){
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            client.commands.get('clear').execute(message, args, Discord);
+        }
     }
      else
     {
