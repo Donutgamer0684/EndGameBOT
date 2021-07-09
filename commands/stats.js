@@ -1,7 +1,7 @@
 module.exports = {
     name: 'stats',
     description: "stats",
-    execute(message, args, Discord) { //        message.channel.send('> ⚠ This is being worked on please wait ⚠')
+    execute(message, args, Discord) {
         const { guild } = message
 
         const { name, region, memberCount, owner, afkTimeout } = guild
