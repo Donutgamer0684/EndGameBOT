@@ -16,15 +16,13 @@ for(const file of commandFiles){
 }
 
 const hook = new Discord.WebhookClient('862870396969418813', '7MOc0Tfjyx4oSNPKz32b3tfL1HEkNdNhctskYhwGd5xaXRiJbtvU6Uax4cmXsnJRuuFu');
-
-const ping = Date.now() - message.createdTimestamp
  
 
 client.once('ready', () => {
     console.log('ONLINE');
     console.log(`Logged in as: ${client.user.tag}`);
     client.user.setPresence({ activity: { name: ".Help for more info! | EndGame on top! |" }, status: "dnd" })
-    hook.send(`${client.user.tag} is online | Server ping: **${ping}**ms`);
+    hook.send(`${client.user.tag} is online | Server restart`);
 }); 
  
 client.on('message', message =>{
