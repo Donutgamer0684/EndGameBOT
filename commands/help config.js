@@ -12,7 +12,7 @@ module.exports = {
             { name: '\u200B', value: '\u200B' },
             { name: '**.mod**', value: 'has mod only commands!', inline: true },
             { name: '**.purge**', value: 'Clears messages (mod command)', inline: true },
-            { name: '**.clear**', value: 'shows bot stats', inline: true },
+            { name: '**.clear**', value: 'clears channels', inline: true },
         )
         .setTimestamp()
         .setFooter('EndGame | The Most Sexy BOT You Will Ever Find');
