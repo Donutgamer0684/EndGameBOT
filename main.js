@@ -22,7 +22,7 @@ client.once('ready', () => {
     console.log('ONLINE');
     console.log(`Logged in as: ${client.user.tag}`);
     client.user.setPresence({ activity: { name: ".Help for more info! | EndGame on top! |" }, status: "dnd" })
-    hook.send(`${client.user.tag} is online`);
+    hook.send(`${client.user.tag} is online | Server reboot`);
 }); 
  
 client.on('message', message =>{
