@@ -2,6 +2,9 @@ module.exports = {
     name: 'clear',
     description: "clear",
     execute(message, args, Discord) {
-        message.channel.send('> ⚠ This is being worked on please wait ⚠')
+        message.channel.messages.fetch().then((results) => {
+            message.channel.bulkDelete(results)
+            message.channel.send('Channel cleared!')
+          })
     }
   }

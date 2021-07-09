@@ -152,6 +152,10 @@ client.on('message', message =>{
         if (message.member.hasPermission('ADMINISTRATOR')) {
             client.commands.get('clear').execute(message, args, Discord);
         }
+        else
+        {
+            message.reply('**You dont have the perms to do that!**');
+        }
     }
      else
     {
