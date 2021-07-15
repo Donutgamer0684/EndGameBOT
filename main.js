@@ -6,7 +6,7 @@ const prefix = '.';
 
 const fs = require('fs');
 
-require('discord-buttons')(client)
+const disbut = require("discord-buttons");
 
 client.commands = new Discord.Collection();
  
