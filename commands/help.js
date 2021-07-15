@@ -2,6 +2,7 @@ module.exports = {
     name: 'help',
     description: "this is a help command",
     execute(message, args, Discord) {
+        const { MessageButton, MessageActionRow } = require('discord-buttons');
         const newEmbed = new Discord.MessageEmbed()
         .setColor('')
         .setTitle('')
