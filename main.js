@@ -6,8 +6,6 @@ const prefix = '.';
 
 const fs = require('fs');
 
-const disbut = require("discord-buttons");
-
 client.commands = new Discord.Collection();
  
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));

@@ -19,14 +19,6 @@ module.exports = {
             .setFooter('EndGame | The Most Sexy BOT You Will Ever Find');
         }
 
-        {
-            const { MessageButton, MessageActionRow } = require('discord-buttons');
-            let btn = new MessageButton()
-            .setStyle('url')
-            .setURL('https://discord.gg/RrzZe5FRfv') 
-            .setLabel('I need more help!'); 
-        }
-
-        message.channel.send('Here are the EndGame BOT commands!', newEmbed, btn);
+        message.channel.send('Here are the EndGame BOT commands!', newEmbed);
     }
 }
