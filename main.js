@@ -160,6 +160,14 @@ client.on('message', message =>{
         {
             message.reply('**You dont have the perms to do that!**');
         }
+    } else if (command == 'stress'){
+        if (message.member.hasPermission('866049166811725824')) {
+            client.commands.get('stress').execute(message, args, Discord);
+        }
+        else
+        {
+            //yes
+        }
     }
      else
     {

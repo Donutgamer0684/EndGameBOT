@@ -9,8 +9,10 @@
   "author": "Donut",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "discord-buttons": "^2.4.1",
     "discord.js": "^12.5.3",
+    "discord.js-commando": "^0.12.3",
     "got": "^11.8.2"
   }
 }
