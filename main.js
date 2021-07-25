@@ -21,7 +21,7 @@ const hook = new Discord.WebhookClient('862870396969418813', '7MOc0Tfjyx4oSNPKz3
 client.once('ready', () => {
     console.log('ONLINE');
     console.log(`Logged in as: ${client.user.tag}`);
-    client.user.setPresence({ activity: { name: `Helping: ${client.guilds.cache.size} servers` }, status: "dnd" })
+    client.user.setPresence({ activity: { name: `Helping: ${client.guilds.cache.size} servers | .Help for more info!` }, status: "dnd" })
     hook.send(`${client.user.tag} is online | Server restart`);
 }); 
 
