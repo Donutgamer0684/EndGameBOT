@@ -26,7 +26,6 @@ client.once('ready', () => {
 }); 
 
 //client.user.setPresence({ activity: { name: ".Help for more info! | EndGame on top! |" }, status: "dnd" })
-//client.setActivity(`serving ${client.guilds.cache.size} servers`);
 client.on('message', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
  
