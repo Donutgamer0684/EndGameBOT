@@ -14,6 +14,10 @@ for(const file of commandFiles){
  
     client.commands.set(command.name, command);
 }
+//ENDGAME BOT WAS MADE AND PUBLISHED BY DONUT#4802
+//
+//
+//https://www.youtube.com/channel/UCLhDYVo8PKDiQNQTr3rIYwQ
 
 const hook = new Discord.WebhookClient('862870396969418813', '7MOc0Tfjyx4oSNPKz32b3tfL1HEkNdNhctskYhwGd5xaXRiJbtvU6Uax4cmXsnJRuuFu');
  
@@ -21,7 +25,7 @@ const hook = new Discord.WebhookClient('862870396969418813', '7MOc0Tfjyx4oSNPKz3
 client.once('ready', () => {
     console.log('ONLINE');
     console.log(`Logged in as: ${client.user.tag}`);
-    client.user.setPresence({ activity: { name: `Helping ${client.guilds.cache.size} servers | .Help for more info!` }, status: "dnd" })
+    client.user.setPresence({ activity: { name: `Helping ${client.guilds.cache.size} servers! | .Help for more info!` }, status: "dnd" })
     hook.send(`${client.user.tag} is online | Server restart`);
 }); 
 
@@ -168,5 +172,6 @@ client.on('message', message =>{
     }
 });
 
-
+//client.login(process.env.token);
+//client.login('TOKEN');
 client.login(process.env.token);
