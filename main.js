@@ -19,6 +19,8 @@ for(const file of commandFiles){
 //
 //https://www.youtube.com/channel/UCLhDYVo8PKDiQNQTr3rIYwQ
 
+                                       //Online notification
+                                      //Webhook ID          //Webhook Token
 const hook = new Discord.WebhookClient('862870396969418813', '7MOc0Tfjyx4oSNPKz32b3tfL1HEkNdNhctskYhwGd5xaXRiJbtvU6Uax4cmXsnJRuuFu');
  
 
@@ -173,5 +175,5 @@ client.on('message', message =>{
 });
 
 //client.login(process.env.token);
-//client.login('TOKEN');
+//client.login('TOKEN'); (put you discord bot token like this)
 client.login(process.env.token);
